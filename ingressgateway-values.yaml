@@ -1,0 +1,16 @@
+revision: ""
+
+gateways:
+  istio-ingressgateway:
+
+    # Default deployment name
+    name: istio-ingressgateway
+
+    # At least 2 replicas is always recommended
+    autoscaleMin: 2
+
+    # Service type, NodePort for On-Prem, LoadBalancer for Cloud
+    type: NodePort
+
+    # Injection template is always "gateway"
+    injectionTemplate: "gateway"
