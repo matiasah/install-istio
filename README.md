@@ -40,3 +40,9 @@ In gateway.yaml there's an example gateway you can install locally.
 ```bash
 kubectl apply -f gateway.yaml
 ```
+
+# Deploy Telemetry
+Deploy Telemetry to be able to see your Ingress Gateway logs.
+```bash
+kubectl apply -f telemetry.yaml
+```
