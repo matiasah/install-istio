@@ -33,3 +33,10 @@ kubectl create namespace gateway
 kubectl label namespace gateway istio-injection=enabled
 helm install istio-ingress ./istio-<YOUR ISTIO VERSION>/manifests/charts/gateways/istio-ingress -n gateway -f ingressgateway-values.yaml --wait
 ```
+
+# Deploy Gateway
+You need to install a Istio gateway for your applications to be exposed through that gateway.
+In gateway.yaml there's an example gateway you can install locally.
+```bash
+kubectl apply -f gateway.yaml
+```
